@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakistan Open Banking &amp; Fintech Regulatory Timeline (2019–2026)</title>
+<style>
+  :root {
+    --sbp: #1A5276;
+    --pta: #1E8449;
+    --nadra: #D35400;
+    --secp: #6C3483;
+    --moitt: #566573;
+    --sbp-bg: #D4E6F1;
+    --pta-bg: #D5F5E3;
+    --nadra-bg: #FDEBD0;
+    --secp-bg: #E8DAEF;
+    --moitt-bg: #D5D8DC;
+    --axis: #ABB2B9;
+    --text: #1C2833;
+    --text-secondary: #5D6D7E;
+    --bg: #FAFAFA;
+    --card-bg: #FFFFFF;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1A5276 0%, #2E86C1 100%);
+    color: white;
+    padding: 48px 24px 40px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .header p {
+    font-size: 1rem;
+    opacity: 0.85;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* Filter Bar */
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px 24px;
+    background: white;
+    border-bottom: 1px solid #E5E8EB;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .filter-btn {
+    padding: 6px 16px;
+    border: 2px solid #D5D8DC;
+    border-radius: 20px;
+    background: white;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  .filter-btn:hover { border-color: #ABB2B9; color: var(--text); }
+  .filter-btn.active { color: white; }
+  .filter-btn[data-filter="all"].active { background: var(--text); border-color: var(--text); }
+  .filter-btn[data-filter="SBP"].active { background: var(--sbp); border-color: var(--sbp); }
+  .filter-btn[data-filter="PTA"].active { background: var(--pta); border-color: var(--pta); }
+  .filter-btn[data-filter="NADRA"].active { background: var(--nadra); border-color: var(--nadra); }
+  .filter-btn[data-filter="SECP"].active { background: var(--secp); border-color: var(--secp); }
+  .filter-btn[data-filter="MoITT"].active { background: var(--moitt); border-color: var(--moitt); }
+
+  /* Timeline Container */
+  .timeline-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    position: relative;
+  }
+
+  /* Central Axis */
+  .timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--axis);
+    transform: translateX(-50%);
+  }
+
+  /* Year Markers */
+  .year-marker {
+    position: relative;
+    text-align: center;
+    margin: 32px 0 24px;
+    z-index: 2;
+  }
+  .year-marker span {
+    display: inline-block;
+    background: var(--text);
+    color: white;
+    padding: 6px 20px;
+    border-radius: 16px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  /* Event Cards */
+  .event {
+    position: relative;
+    width: 45%;
+    margin-bottom: 32px;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .event.hidden {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .event.left { margin-right: auto; margin-left: 0; }
+  .event.right { margin-left: auto; margin-right: 0; }
+
+  /* Connector dot on axis */
+  .event::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index: 3;
+  }
+  .event.left::before { right: -7%; transform: translateX(50%); }
+  .event.right::before { left: -7%; transform: translateX(-50%); }
+
+  .event[data-reg="SBP"]::before { background: var(--sbp); }
+  .event[data-reg="PTA"]::before { background: var(--pta); }
+  .event[data-reg="NADRA"]::before { background: var(--nadra); }
+  .event[data-reg="SECP"]::before { background: var(--secp); }
+  .event[data-reg="MoITT"]::before { background: var(--moitt); }
+
+  /* Connector line */
+  .event::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    height: 2px;
+    width: 5%;
+    z-index: 1;
+  }
+  .event.left::after { right: -5%; background: var(--axis); }
+  .event.right::after { left: -5%; background: var(--axis); }
+
+  .card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    border-left: 4px solid transparent;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+  }
+
+  .event[data-reg="SBP"] .card { border-left-color: var(--sbp); }
+  .event[data-reg="PTA"] .card { border-left-color: var(--pta); }
+  .event[data-reg="NADRA"] .card { border-left-color: var(--nadra); }
+  .event[data-reg="SECP"] .card { border-left-color: var(--secp); }
+  .event[data-reg="MoITT"] .card { border-left-color: var(--moitt); }
+
+  .card-date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+  .badge.SBP { background: var(--sbp); }
+  .badge.PTA { background: var(--pta); }
+  .badge.NADRA { background: var(--nadra); }
+  .badge.SECP { background: var(--secp); }
+  .badge.MoITT { background: var(--moitt); }
+
+  .card-headline {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+    line-height: 1.35;
+  }
+
+  .card-annotation {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, margin 0.3s ease;
+  }
+  .card-annotation.open {
+    max-height: 400px;
+    margin-top: 8px;
+  }
+
+  .card-source {
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .card-source.open { max-height: 50px; }
+  .card-source a {
+    font-size: 0.78rem;
+    color: var(--sbp);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .card-source a:hover { text-decoration: underline; }
+
+  .expand-hint {
+    font-size: 0.75rem;
+    color: var(--axis);
+    margin-top: 4px;
+    transition: opacity 0.3s;
+  }
+  .expand-hint.gone { opacity: 0; }
+
+  /* Stats Bar */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 16px 24px;
+    background: white;
+    border-bottom: 1px solid #E5E8EB;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+  }
+  .stats span { font-weight: 700; color: var(--text); }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    border-top: 1px solid #E5E8EB;
+    background: white;
+  }
+  .footer a { color: var(--sbp); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .header h1 { font-size: 1.4rem; }
+    .header p { font-size: 0.9rem; }
+
+    .timeline-container::before {
+      left: 20px;
+    }
+
+    .event { width: calc(100% - 48px); margin-left: 48px !important; margin-right: 0 !important; }
+
+    .event::before {
+      left: -34px !important;
+      right: auto !important;
+      transform: none !important;
+    }
+    .event::after {
+      left: -20px !important;
+      right: auto !important;
+      width: 20px !important;
+    }
+
+    .year-marker { text-align: left; padding-left: 48px; }
+
+    .filter-btn { font-size: 0.78rem; padding: 5px 12px; }
+    .stats { gap: 12px; font-size: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Pakistan Open Banking &amp; Fintech Regulatory Timeline</h1>
+  <p>Every significant regulatory milestone from 2019 to 2026, annotated for builders. Click any event to learn what it means for fintech architecture.</p>
+</div>
+
+<div class="filter-bar" id="filterBar">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="SBP">SBP</button>
+  <button class="filter-btn" data-filter="PTA">PTA</button>
+  <button class="filter-btn" data-filter="NADRA">NADRA</button>
+  <button class="filter-btn" data-filter="SECP">SECP</button>
+  <button class="filter-btn" data-filter="MoITT">MoITT</button>
+</div>
+
+<div class="stats" id="stats"></div>
+
+<div class="timeline-container" id="timeline"></div>
+
+<div class="footer">
+  <p>Built by <strong>Fawad Liaqat</strong> as a public utility for Pakistan's fintech ecosystem.</p>
+  <p style="margin-top:4px;">Found an error or missing event? <a href="https://github.com/fawadliaqat" target="_blank">Submit a correction on GitHub</a>.</p>
+  <p style="margin-top:4px; font-size:0.75rem; opacity:0.7;">Last updated: March 2026. Sources linked per event.</p>
+</div>
+
+<script>
+const events = [
+  {
+    date: "2019-01-01",
+    displayDate: "2019",
+    regulator: "SECP",
+    headline: "SECP Regulatory Sandbox Guidelines Issued",
+    annotation: "SECP became the first Pakistani regulator to offer a sandbox, initially cohort-based. Fintechs working on tokenized securities, robo-advisory, or crowdfunding could test products without full licensing. The sandbox accepted proposals in quarterly cycles, providing a supervised path to market for capital-market innovations.",
+    sourceUrl: "https://www.secp.gov.pk/regulatory-sandbox/",
+    sourceAvailable: true
+  },
+  {
+    date: "2019-11-01",
+    displayDate: "November 2019",
+    regulator: "SBP",
+    headline: "National Payment Systems Strategy (NPSS) Published",
+    annotation: "The NPSS laid out the entire roadmap for Raast and digital payment infrastructure. For builders, this is the foundational document that defines how instant payments, open banking APIs, and interoperability standards will evolve. Any fintech designing payment flows in Pakistan should treat this as the architectural blueprint.",
+    sourceUrl: "https://www.sbp.org.pk/ps/NPSS.htm",
+    sourceAvailable: true
+  },
+  {
+    date: "2021-01-11",
+    displayDate: "January 2021",
+    regulator: "SBP",
+    headline: "Raast Bulk Payments Module Launched",
+    annotation: "The first phase of Pakistan\u2019s instant payment system went live with bulk disbursements \u2014 government salaries, pensions, and social grants. For builders, this established the core clearing infrastructure that P2P and P2M modules would later plug into. Integration required connecting through SBP\u2019s participant framework.",
+    sourceUrl: "https://www.sbp.org.pk/press/2021/Pr-11-Jan-21.pdf",
+    sourceAvailable: true
+  },
+  {
+    date: "2022-01-03",
+    displayDate: "January 2022",
+    regulator: "SBP",
+    headline: "Digital Bank Licensing Framework Issued",
+    annotation: "SBP created two license types: Digital Retail Bank (DRB) and Digital Full Bank (DFB), with minimum capital of PKR 1.5B for DRBs scaling to PKR 4B over three years. This means a fintech can now obtain a full banking license without physical branches. The framework requires robust digital governance and data management \u2014 any aspiring neobank needs to design for these from day one.",
+    sourceUrl: "https://www.sbp.org.pk/bprd/2022/C1-Annex.pdf",
+    sourceAvailable: true
+  },
+  {
+    date: "2022-02-01",
+    displayDate: "February 2022",
+    regulator: "SBP",
+    headline: "Raast P2P Instant Transfers Go Live",
+    annotation: "Consumers could now send money instantly and free of charge using just a mobile number (RAAST ID) through their bank\u2019s app. For builders, this opened the door to embedding instant transfers into any product \u2014 wallets, lending apps, or marketplaces \u2014 via Raast\u2019s API layer. KYC-verified bank accounts are the minimum requirement for senders and receivers.",
+    sourceUrl: "https://www.sbp.org.pk/dfs/Raast-P2P.html",
+    sourceAvailable: true
+  },
+  {
+    date: "2023-06-21",
+    displayDate: "June 2023",
+    regulator: "SBP",
+    headline: "Revised EMI Regulations 2023 Issued",
+    annotation: "The revised framework dramatically expanded what EMIs can do: payment aggregation, bill aggregation, escrow services for e-commerce, API services to other fintechs, and inward cross-border remittances. Wallet limits were increased, and minors and freelancers became eligible customers. If you are building a wallet or payment product, these regulations define your ceiling.",
+    sourceUrl: "https://www.sbp.org.pk/psd/2023/C3-Enclosure-Regulations-EMIs.pdf",
+    sourceAvailable: true
+  },
+  {
+    date: "2023-07-01",
+    displayDate: "July 2023",
+    regulator: "MoITT",
+    headline: "Personal Data Protection Bill 2023 Approved by Cabinet",
+    annotation: "Pakistan\u2019s first comprehensive data privacy legislation was approved by the Federal Cabinet and sent to Parliament. It establishes a National Commission for Personal Data Protection and requires explicit consent frameworks, breach notification, and cross-border data transfer controls. Any fintech handling PII needs to architect consent management and data audit trails now, even before final enactment.",
+    sourceUrl: "https://moitt.gov.pk/SiteImage/Misc/files/Final%20Draft%20Personal%20Data%20Protection%20Bill%20May%202023.pdf",
+    sourceAvailable: true
+  },
+  {
+    date: "2023-09-01",
+    displayDate: "September 2023",
+    regulator: "SECP",
+    headline: "Regulatory Sandbox Restructured to Always-Open",
+    annotation: "SECP moved from cohort-based intake to year-round applications across three streams: Islamic finance, conventional finance, and women-focused initiatives. This removes the timing constraint for startups \u2014 you can apply whenever your product is ready rather than waiting for the next cohort window.",
+    sourceUrl: "https://www.secp.gov.pk/regulatory-sandbox/",
+    sourceAvailable: true
+  },
+  {
+    date: "2023-09-15",
+    displayDate: "September 2023",
+    regulator: "SBP",
+    headline: "Five Digital Bank In-Principle Approvals Granted",
+    annotation: "Easypaisa, Mashreq Bank, Raqami Islamic Digital Bank, HugoBank, and KT Bank received In-Principle Approval to prepare for operational readiness. This validated that SBP\u2019s digital bank framework was moving from policy to execution. For the ecosystem, it signaled that branchless banking at scale was imminent and third-party service providers should prepare integration capabilities.",
+    sourceUrl: "https://www.sbp.org.pk/dfs/Digital-Bank-Regulatory.html",
+    sourceAvailable: true
+  },
+  {
+    date: "2023-12-05",
+    displayDate: "December 2023",
+    regulator: "SBP",
+    headline: "Raast P2M Service Launched",
+    annotation: "Merchant payments on Pakistan\u2019s instant payment rail became operational, with all regulated entities required to enable P2M capabilities by March 2024. The system uses SBP\u2019s indigenous QR code standard. For builders, this means any merchant-facing product can now accept instant payments via a standardized QR flow rather than proprietary integrations.",
+    sourceUrl: "https://www.sbp.org.pk/psd/2023/C4.htm",
+    sourceAvailable: true
+  },
+  {
+    date: "2025-01-28",
+    displayDate: "January 2025",
+    regulator: "SBP",
+    headline: "First Digital Retail Bank License Granted",
+    annotation: "Easypaisa Bank Limited became Pakistan\u2019s first licensed digital retail bank, authorized for full commercial operations. This is the proof point that the 2022 framework actually delivers licenses. Competing fintechs now face a licensed digital-first competitor with Telenor\u2019s distribution reach. Mashreq Bank received pilot approval shortly after in February.",
+    sourceUrl: "https://www.sbp.org.pk/press/2025/Pr-28-Jan-2025.pdf",
+    sourceAvailable: true
+  },
+  {
+    date: "2025-02-22",
+    displayDate: "February 2025",
+    regulator: "SBP",
+    headline: "Raast Participation Criteria Published",
+    annotation: "SBP opened Raast access beyond banks to fintechs, payment aggregators, and even educational institutions through four participant categories: direct settlement, direct non-settlement, payment initiation service providers, and indirect participants. This is the open banking enabler \u2014 non-bank fintechs can now initiate payments on Raast directly rather than routing through a banking partner.",
+    sourceUrl: "https://www.sbp.org.pk/psd/2025/C1.htm",
+    sourceAvailable: true
+  },
+  {
+    date: "2025-05-21",
+    displayDate: "May 2025",
+    regulator: "SBP",
+    headline: "SBP Regulatory Sandbox Launched",
+    annotation: "SBP launched its own sandbox under Vision 2028, separate from SECP\u2019s. The first cohort themes \u2014 open banking, inward remittances, and remote merchant onboarding \u2014 reveal SBP\u2019s priorities. Participants get six months of supervised live testing. If you are building an open banking product, this is the lowest-risk path to regulatory approval.",
+    sourceUrl: "https://profit.pakistantoday.com.pk/2025/05/21/sbp-launches-regulatory-sandbox-to-foster-innovation-in-fintech-sector/",
+    sourceAvailable: true
+  },
+  {
+    date: "2025-07-25",
+    displayDate: "July 2025",
+    regulator: "SBP",
+    headline: "Consolidated Customer Onboarding Framework (BPRD 01/2025)",
+    annotation: "SBP unified all customer onboarding rules into a single framework mandating biometric verification as the primary identification method for all regulated entities. Compliance deadline was October 2025. For builders, this means any account opening or wallet activation flow must integrate NADRA biometric verification \u2014 non-biometric onboarding paths are being phased out.",
+    sourceUrl: "https://www.sbp.org.pk/bprd/2025/C1-Consolidated-Customer-Onboarding-Framework.pdf",
+    sourceAvailable: true
+  },
+  {
+    date: "2025-08-12",
+    displayDate: "August 2025",
+    regulator: "SBP",
+    headline: "Digital Rupee CBDC Pilot Announced with Soramitsu",
+    annotation: "SBP partnered with Japan\u2019s Soramitsu to pilot a central bank digital currency with offline transaction capability, targeting financial inclusion in areas with limited internet. For builders, CBDC introduces a new payment rail alongside Raast. Products designed for rural or low-connectivity use cases should watch this pilot closely \u2014 offline QR-based CBDC transactions could change the accessibility equation entirely.",
+    sourceUrl: "https://profit.pakistantoday.com.pk/2025/08/12/sbp-partners-with-soramitsu-to-pilot-digital-pakistani-rupee-in-2025/",
+    sourceAvailable: true
+  },
+  {
+    date: "2025-10-17",
+    displayDate: "October 2025",
+    regulator: "NADRA",
+    headline: "Digital Identity & NDEL Regulations 2025 Issued",
+    annotation: "NADRA issued two landmark frameworks: Digital Identity Regulations making digital credentials legally equivalent to physical CNICs, and National Data Exchange Layer (NDEL) Regulations enabling standardized data sharing between government agencies and authorized private entities. For fintechs, this means eKYC via NADRA\u2019s digital identity system becomes a first-class integration path, and NDEL APIs will eventually allow pulling verified customer data from multiple government sources through a single layer.",
+    sourceUrl: "https://propakistani.pk/2025/10/17/nadra-issues-landmark-digital-id-and-data-exchange-regulations/",
+    sourceAvailable: true
+  },
+  {
+    date: "2025-10-29",
+    displayDate: "October 2025",
+    regulator: "PTA",
+    headline: "Critical Telecom Infrastructure Security Regulations 2025",
+    annotation: "PTA mandated data localization for all telecom operators, required CISO appointments, annual cyber audits, and 24-hour incident reporting under a Zero Trust security model aligned with ISO 27001 and NIST CSF. Fintechs dependent on telecom infrastructure for mobile money or USSD channels need to understand that their underlying carriers now face strict compliance obligations that could affect uptime SLAs and data handling agreements.",
+    sourceUrl: "https://www.pta.gov.pk/assets/media/2025-10-29-Critical-Telecom-Data-and-Infrastructure-Security-Regulations-2025.pdf",
+    sourceAvailable: true
+  },
+  {
+    date: "2026-01-06",
+    displayDate: "January 2026",
+    regulator: "SBP",
+    headline: "First Regulatory Sandbox Cohort Shortlisted",
+    annotation: "Six firms were selected: three for open banking (Neem, Digi Khata, Switch Retail), one for remote merchant onboarding (Bank of Punjab), and two for inward remittances (Barq Fintech, Taptap Send with UBL). These selections signal what SBP considers the most promising innovation vectors. Builders in adjacent spaces should study these participants\u2019 approaches \u2014 they represent SBP\u2019s view of where the ecosystem needs to go.",
+    sourceUrl: "https://www.sbp.org.pk/press/2026/Pr-06-Jan-2026.pdf",
+    sourceAvailable: true
+  }
+];
+
+// Group by year
+function getYear(dateStr) { return dateStr.substring(0, 4); }
+
+function renderTimeline(filter) {
+  const container = document.getElementById('timeline');
+  container.innerHTML = '';
+
+  const filtered = filter === 'all' ? events : events.filter(e => e.regulator === filter);
+  let currentYear = '';
+  let side = 'left';
+
+  // Stats
+  const regulatorCounts = {};
+  filtered.forEach(e => { regulatorCounts[e.regulator] = (regulatorCounts[e.regulator] || 0) + 1; });
+  const statsEl = document.getElementById('stats');
+  statsEl.innerHTML = `<div><span>${filtered.length}</span> events</div>` +
+    Object.entries(regulatorCounts).map(([r, c]) => `<div><span>${c}</span> ${r}</div>`).join('');
+
+  filtered.forEach((event, i) => {
+    const year = getYear(event.date);
+
+    // Year marker
+    if (year !== currentYear) {
+      currentYear = year;
+      const marker = document.createElement('div');
+      marker.className = 'year-marker';
+      marker.innerHTML = `<span>${year}</span>`;
+      container.appendChild(marker);
+      side = 'left';
+    }
+
+    const el = document.createElement('div');
+    el.className = `event ${side}`;
+    el.setAttribute('data-reg', event.regulator);
+
+    el.innerHTML = `
+      <div class="card">
+        <div class="card-date">${event.displayDate}</div>
+        <span class="badge ${event.regulator}">${event.regulator}</span>
+        <div class="card-headline">${event.headline}</div>
+        <div class="expand-hint">Click to expand</div>
+        <div class="card-annotation">${event.annotation}</div>
+        <div class="card-source">
+          ${event.sourceAvailable ? `<a href="${event.sourceUrl}" target="_blank" rel="noopener">View source document &rarr;</a>` : '<span style="font-size:0.78rem;color:#ABB2B9;">Source not publicly accessible at time of publication.</span>'}
+        </div>
+      </div>
+    `;
+
+    el.querySelector('.card').addEventListener('click', function() {
+      const ann = this.querySelector('.card-annotation');
+      const src = this.querySelector('.card-source');
+      const hint = this.querySelector('.expand-hint');
+      ann.classList.toggle('open');
+      src.classList.toggle('open');
+      hint.classList.toggle('gone');
+    });
+
+    container.appendChild(el);
+    side = side === 'left' ? 'right' : 'left';
+  });
+}
+
+// Filter buttons
+document.getElementById('filterBar').addEventListener('click', function(e) {
+  if (!e.target.classList.contains('filter-btn')) return;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  e.target.classList.add('active');
+  renderTimeline(e.target.dataset.filter);
+});
+
+// Initial render
+renderTimeline('all');
+</script>
+
+</body>
+</html>

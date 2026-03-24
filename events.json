@@ -1,0 +1,164 @@
+[
+  {
+    "date": "2019-11-01",
+    "displayDate": "November 2019",
+    "regulator": "SBP",
+    "headline": "National Payment Systems Strategy (NPSS) Published",
+    "annotation": "The NPSS laid out the entire roadmap for Raast and digital payment infrastructure. For builders, this is the foundational document that defines how instant payments, open banking APIs, and interoperability standards will evolve. Any fintech designing payment flows in Pakistan should treat this as the architectural blueprint.",
+    "sourceUrl": "https://www.sbp.org.pk/ps/NPSS.htm",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2019-01-01",
+    "displayDate": "2019",
+    "regulator": "SECP",
+    "headline": "SECP Regulatory Sandbox Guidelines Issued",
+    "annotation": "SECP became the first Pakistani regulator to offer a sandbox, initially cohort-based. Fintechs working on tokenized securities, robo-advisory, or crowdfunding could test products without full licensing. The sandbox accepted proposals in quarterly cycles, providing a supervised path to market for capital-market innovations.",
+    "sourceUrl": "https://www.secp.gov.pk/regulatory-sandbox/",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2021-01-11",
+    "displayDate": "January 2021",
+    "regulator": "SBP",
+    "headline": "Raast Bulk Payments Module Launched",
+    "annotation": "The first phase of Pakistan's instant payment system went live with bulk disbursements — government salaries, pensions, and social grants. For builders, this established the core clearing infrastructure that P2P and P2M modules would later plug into. Integration required connecting through SBP's participant framework.",
+    "sourceUrl": "https://www.sbp.org.pk/press/2021/Pr-11-Jan-21.pdf",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2022-01-03",
+    "displayDate": "January 2022",
+    "regulator": "SBP",
+    "headline": "Digital Bank Licensing Framework Issued",
+    "annotation": "SBP created two license types: Digital Retail Bank (DRB) and Digital Full Bank (DFB), with minimum capital of PKR 1.5B for DRBs scaling to PKR 4B over three years. This means a fintech can now obtain a full banking license without physical branches. The framework requires robust digital governance and data management — any aspiring neobank needs to design for these from day one.",
+    "sourceUrl": "https://www.sbp.org.pk/bprd/2022/C1-Annex.pdf",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2022-02-01",
+    "displayDate": "February 2022",
+    "regulator": "SBP",
+    "headline": "Raast P2P Instant Transfers Go Live",
+    "annotation": "Consumers could now send money instantly and free of charge using just a mobile number (RAAST ID) through their bank's app. For builders, this opened the door to embedding instant transfers into any product — wallets, lending apps, or marketplaces — via Raast's API layer. KYC-verified bank accounts are the minimum requirement for senders and receivers.",
+    "sourceUrl": "https://www.sbp.org.pk/dfs/Raast-P2P.html",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2023-06-21",
+    "displayDate": "June 2023",
+    "regulator": "SBP",
+    "headline": "Revised EMI Regulations 2023 Issued",
+    "annotation": "The revised framework dramatically expanded what EMIs can do: payment aggregation, bill aggregation, escrow services for e-commerce, API services to other fintechs, and inward cross-border remittances. Wallet limits were increased, and minors and freelancers became eligible customers. If you are building a wallet or payment product, these regulations define your ceiling.",
+    "sourceUrl": "https://www.sbp.org.pk/psd/2023/C3-Enclosure-Regulations-EMIs.pdf",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2023-07-01",
+    "displayDate": "July 2023",
+    "regulator": "MoITT",
+    "headline": "Personal Data Protection Bill 2023 Approved by Cabinet",
+    "annotation": "Pakistan's first comprehensive data privacy legislation was approved by the Federal Cabinet and sent to Parliament. It establishes a National Commission for Personal Data Protection and requires explicit consent frameworks, breach notification, and cross-border data transfer controls. Any fintech handling PII needs to architect consent management and data audit trails now, even before final enactment.",
+    "sourceUrl": "https://moitt.gov.pk/SiteImage/Misc/files/Final%20Draft%20Personal%20Data%20Protection%20Bill%20May%202023.pdf",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2023-09-01",
+    "displayDate": "September 2023",
+    "regulator": "SECP",
+    "headline": "Regulatory Sandbox Restructured to Always-Open",
+    "annotation": "SECP moved from cohort-based intake to year-round applications across three streams: Islamic finance, conventional finance, and women-focused initiatives. This removes the timing constraint for startups — you can apply whenever your product is ready rather than waiting for the next cohort window.",
+    "sourceUrl": "https://www.secp.gov.pk/regulatory-sandbox/",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2023-09-01",
+    "displayDate": "September 2023",
+    "regulator": "SBP",
+    "headline": "Five Digital Bank In-Principle Approvals Granted",
+    "annotation": "Easypaisa, Mashreq Bank, Raqami Islamic Digital Bank, HugoBank, and KT Bank received In-Principle Approval to prepare for operational readiness. This validated that SBP's digital bank framework was moving from policy to execution. For the ecosystem, it signaled that branchless banking at scale was imminent and third-party service providers should prepare integration capabilities.",
+    "sourceUrl": "https://www.sbp.org.pk/dfs/Digital-Bank-Regulatory.html",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2023-12-05",
+    "displayDate": "December 2023",
+    "regulator": "SBP",
+    "headline": "Raast P2M Service Launched",
+    "annotation": "Merchant payments on Pakistan's instant payment rail became operational, with all regulated entities required to enable P2M capabilities by March 2024. The system uses SBP's indigenous QR code standard. For builders, this means any merchant-facing product can now accept instant payments via a standardized QR flow rather than proprietary integrations.",
+    "sourceUrl": "https://www.sbp.org.pk/psd/2023/C4.htm",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2025-01-28",
+    "displayDate": "January 2025",
+    "regulator": "SBP",
+    "headline": "First Digital Retail Bank License Granted",
+    "annotation": "Easypaisa Bank Limited became Pakistan's first licensed digital retail bank, authorized for full commercial operations. This is the proof point that the 2022 framework actually delivers licenses. Competing fintechs now face a licensed digital-first competitor with Telenor's distribution reach. Mashreq Bank received pilot approval shortly after in February.",
+    "sourceUrl": "https://www.sbp.org.pk/press/2025/Pr-28-Jan-2025.pdf",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2025-02-22",
+    "displayDate": "February 2025",
+    "regulator": "SBP",
+    "headline": "Raast Participation Criteria Published",
+    "annotation": "SBP opened Raast access beyond banks to fintechs, payment aggregators, and even educational institutions through four participant categories: direct settlement, direct non-settlement, payment initiation service providers, and indirect participants. This is the open banking enabler — non-bank fintechs can now initiate payments on Raast directly rather than routing through a banking partner.",
+    "sourceUrl": "https://www.sbp.org.pk/psd/2025/C1.htm",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2025-05-21",
+    "displayDate": "May 2025",
+    "regulator": "SBP",
+    "headline": "SBP Regulatory Sandbox Launched",
+    "annotation": "SBP launched its own sandbox under Vision 2028, separate from SECP's. The first cohort themes — open banking, inward remittances, and remote merchant onboarding — reveal SBP's priorities. Participants get six months of supervised live testing. If you are building an open banking product, this is the lowest-risk path to regulatory approval.",
+    "sourceUrl": "https://profit.pakistantoday.com.pk/2025/05/21/sbp-launches-regulatory-sandbox-to-foster-innovation-in-fintech-sector/",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2025-07-25",
+    "displayDate": "July 2025",
+    "regulator": "SBP",
+    "headline": "Consolidated Customer Onboarding Framework (BPRD 01/2025)",
+    "annotation": "SBP unified all customer onboarding rules into a single framework mandating biometric verification as the primary identification method for all regulated entities. Compliance deadline was October 2025. For builders, this means any account opening or wallet activation flow must integrate NADRA biometric verification — non-biometric onboarding paths are being phased out.",
+    "sourceUrl": "https://www.sbp.org.pk/bprd/2025/C1-Consolidated-Customer-Onboarding-Framework.pdf",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2025-08-12",
+    "displayDate": "August 2025",
+    "regulator": "SBP",
+    "headline": "Digital Rupee CBDC Pilot Announced with Soramitsu",
+    "annotation": "SBP partnered with Japan's Soramitsu to pilot a central bank digital currency with offline transaction capability, targeting financial inclusion in areas with limited internet. For builders, CBDC introduces a new payment rail alongside Raast. Products designed for rural or low-connectivity use cases should watch this pilot closely — offline QR-based CBDC transactions could change the accessibility equation entirely.",
+    "sourceUrl": "https://profit.pakistantoday.com.pk/2025/08/12/sbp-partners-with-soramitsu-to-pilot-digital-pakistani-rupee-in-2025/",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2025-10-17",
+    "displayDate": "October 2025",
+    "regulator": "NADRA",
+    "headline": "Digital Identity & NDEL Regulations 2025 Issued",
+    "annotation": "NADRA issued two landmark frameworks: Digital Identity Regulations making digital credentials legally equivalent to physical CNICs, and National Data Exchange Layer (NDEL) Regulations enabling standardized data sharing between government agencies and authorized private entities. For fintechs, this means eKYC via NADRA's digital identity system becomes a first-class integration path, and NDEL APIs will eventually allow pulling verified customer data from multiple government sources through a single layer.",
+    "sourceUrl": "https://propakistani.pk/2025/10/17/nadra-issues-landmark-digital-id-and-data-exchange-regulations/",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2025-10-29",
+    "displayDate": "October 2025",
+    "regulator": "PTA",
+    "headline": "Critical Telecom Infrastructure Security Regulations 2025",
+    "annotation": "PTA mandated data localization for all telecom operators, required CISO appointments, annual cyber audits, and 24-hour incident reporting under a Zero Trust security model aligned with ISO 27001 and NIST CSF. Fintechs dependent on telecom infrastructure for mobile money or USSD channels need to understand that their underlying carriers now face strict compliance obligations that could affect uptime SLAs and data handling agreements.",
+    "sourceUrl": "https://www.pta.gov.pk/assets/media/2025-10-29-Critical-Telecom-Data-and-Infrastructure-Security-Regulations-2025.pdf",
+    "sourceAvailable": true
+  },
+  {
+    "date": "2026-01-06",
+    "displayDate": "January 2026",
+    "regulator": "SBP",
+    "headline": "First Regulatory Sandbox Cohort Shortlisted",
+    "annotation": "Six firms were selected: three for open banking (Neem, Digi Khata, Switch Retail), one for remote merchant onboarding (Bank of Punjab), and two for inward remittances (Barq Fintech, Taptap Send with UBL). These selections signal what SBP considers the most promising innovation vectors. Builders in adjacent spaces should study these participants' approaches — they represent SBP's view of where the ecosystem needs to go.",
+    "sourceUrl": "https://www.sbp.org.pk/press/2026/Pr-06-Jan-2026.pdf",
+    "sourceAvailable": true
+  }
+]
