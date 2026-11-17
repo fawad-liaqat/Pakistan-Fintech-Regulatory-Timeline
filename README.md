@@ -1,6 +1,6 @@
 # Pakistan Open Banking & Fintech Regulatory Timeline
 
-An interactive, annotated timeline of every significant regulatory milestone in Pakistani digital finance from 2019 to 2026. Built for fintech engineers, product managers, and founders who need to understand the regulatory landscape without reading hundreds of circulars.
+An interactive, annotated timeline of selected regulatory milestones in Pakistani digital finance from 2019 to 2026. Built for fintech engineers, product managers, and founders who need to understand the regulatory landscape without reading hundreds of circulars.
 
 Each entry answers the question a builder would ask: "So what? How does this affect what I can build?"
 
@@ -10,7 +10,9 @@ Open `index.html` in any browser. Filter by regulator using the toolbar. Click a
 
 ## Scope
 
-Covers actions by SBP, PTA, NADRA, SECP, and MoITT that directly affect fintech architecture, licensing, or compliance. Events are verified against official source documents linked in each entry.
+Covers actions by SBP, PTA, NADRA, SECP, MoITT and PVARA that directly affect fintech architecture, licensing, or compliance. Each entry links to its source, and the page ends with a numbered Sources list showing the publisher, date, access date and whether the source is primary or secondary. Links carried over from March 2026 that were not re-opened in November 2026 are marked "not re-checked".
+
+Last updated: November 2026. Events added: PRISM+ (August 2025), 1LINK designation (August 2025), Technology Risk Management Framework (October 2025), Raqami scheduled bank status (February 2026), Cyber Shield strategy (February 2026), Virtual Assets Act 2026 (March 2026), banking access for licensed VASPs (April 2026), draft Open Banking Regulations (October 2026).
 
 ## Contributing
 
@@ -18,4 +20,4 @@ This is a living document. If you find an error, a missing event, or an outdated
 
 ## Author
 
-Fawad Liaqat — [LinkedIn](https://linkedin.com/in/fawadliaqat) | [GitHub](https://github.com/fawadliaqat)
+Fawad Liaqat: [LinkedIn](https://linkedin.com/in/fawad-liaqat) | [GitHub](https://github.com/fawad-liaqat)
