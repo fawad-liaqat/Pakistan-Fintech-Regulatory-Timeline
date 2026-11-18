@@ -885,7 +885,7 @@
         return sources.findIndex((x) => x.url === url) + 1;
       }
       document.getElementById("sourcesList").innerHTML = sources
-        .map((x, i) => `<li id="source-${i + 1}">${x.title}. ${x.publisher}. <a href="${x.url}" target="_blank" rel="noopener">${x.url}</a>. ${x.label}.</li>`)
+        .map((x, i) => `<li id="source-${i + 1}">${x.publisher}. <em>${x.title}</em>. <a href="${x.url}" target="_blank" rel="noopener">${x.url}</a>. ${x.label}.</li>`)
         .join("");
 
       // Group by year
