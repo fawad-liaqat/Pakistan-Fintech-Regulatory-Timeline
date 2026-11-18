@@ -4,28 +4,24 @@
     "displayDate": "2019",
     "regulator": "SECP",
     "headline": "SECP Regulatory Sandbox Guidelines Issued",
-    "annotation": "SECP set up a regulatory sandbox, initially cohort based. The January 2019 date was not rechecked in November 2026. Fintechs working on tokenized securities, automated advice, or crowdfunding could test products without full licensing. The sandbox accepted proposals in quarterly cycles, providing a supervised path to market for capital market innovations.",
+    "annotation": "SECP issued Regulatory Sandbox Guidelines in 2019. Firms in the sectors SECP regulates could test new products under supervision, in cohorts, before full licensing. This gave capital market and non bank finance innovators a supervised path to market.",
     "sourceUrl": "https://www.secp.gov.pk/regulatory-sandbox/",
     "sourceAvailable": true,
     "sourcePublisher": "Securities and Exchange Commission of Pakistan",
-    "sourceTitle": "Regulatory sandbox page",
-    "sourceDate": "Undated page",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Primary, not re-checked"
+    "sourceTitle": "Regulatory sandbox",
+    "label": "Primary"
   },
   {
     "date": "2019-11-01",
     "displayDate": "November 2019",
     "regulator": "SBP",
     "headline": "National Payment Systems Strategy (NPSS) Published",
-    "annotation": "The NPSS laid out the entire roadmap for Raast and digital payment infrastructure. For builders, this is the foundational document that defines how instant payments, open banking APIs, and interoperability standards will evolve. Any fintech designing payment flows in Pakistan should treat this as the architectural blueprint.",
-    "sourceUrl": "https://www.sbp.org.pk/ps/NPSS.htm",
+    "annotation": "SBP launched the National Payment Systems Strategy on 1 November 2019. It set out SBP's plan for Pakistan's digital payment infrastructure, which builders can read as the background to the instant payment rail that followed. It is a strategy, not a binding rule.",
+    "sourceUrl": "https://www.sbp.org.pk/DFS/NPSS.html",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "National Payment Systems Strategy page",
-    "sourceDate": "2019",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Primary, not re-checked"
+    "sourceTitle": "National Payment Systems Strategy",
+    "label": "Primary"
   },
   {
     "date": "2021-01-11",
@@ -36,9 +32,7 @@
     "sourceUrl": "https://www.sbp.org.pk/press/2021/Pr-11-Jan-21.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "Press release on the launch of the first phase of Raast",
-    "sourceDate": "11 January 2021",
-    "accessed": "17 November 2026",
+    "sourceTitle": "PM launches Raast, Pakistan's instant payment system (press release)",
     "label": "Primary"
   },
   {
@@ -46,178 +40,182 @@
     "displayDate": "January 2022",
     "regulator": "SBP",
     "headline": "Digital Bank Licensing Framework Issued",
-    "annotation": "SBP created two licence types: Digital Retail Bank (DRB) and Digital Full Bank (DFB), with minimum capital of PKR 1.5B for DRBs scaling to PKR 4B over three years. This means a fintech can now obtain a full banking license without physical branches. The framework requires robust digital governance and data management, so any aspiring neobank needs to design for these from day one. Capital figures were not rechecked in November 2026.",
+    "annotation": "SBP created two licence types: Digital Retail Bank (DRB) and Digital Full Bank (DFB). A DRB needs minimum capital of PKR 1.5 billion at the pilot stage, rising to PKR 4 billion by the third year after launch. A fintech can now seek a banking licence without physical branches. The framework requires strong digital governance and data management, so any aspiring neobank needs to design for these from day one.",
     "sourceUrl": "https://www.sbp.org.pk/bprd/2022/C1-Annex.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "Licensing and regulatory framework for digital banks (BPRD 2022 Circular 1 annex)",
-    "sourceDate": "January 2022",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Primary, not re-checked"
+    "sourceTitle": "Licensing and Regulatory Framework for Digital Banks",
+    "label": "Primary"
   },
   {
-    "date": "2022-02-01",
+    "date": "2022-02-03",
     "displayDate": "February 2022",
     "regulator": "SBP",
     "headline": "Raast P2P Instant Transfers Go Live",
-    "annotation": "Consumers could now send money instantly and free of charge using just a mobile number (RAAST ID) through their bank's app. For builders, this opened the door to embedding instant transfers into wallets, lending apps or marketplaces through Raast's API layer. Bank accounts with completed KYC are the minimum requirement for senders and receivers.",
-    "sourceUrl": "https://www.sbp.org.pk/dfs/Raast-P2P.html",
+    "annotation": "The second phase of Raast went live. Customers can send money instantly and free of charge to an IBAN or to a Raast ID, which at first is the customer's registered mobile number. For builders, this opened the door to embedding instant transfers into wallets, lending apps or marketplaces through participating banks.",
+    "sourceUrl": "https://www.sbp.org.pk/disd/2022/C1.htm",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "Raast P2P page",
-    "sourceDate": "Undated page",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Primary, not re-checked"
+    "sourceTitle": "DI&SD Circular No. 1 of 2022: Raast Person to Person (P2P) Payment Service",
+    "label": "Primary"
   },
   {
     "date": "2023-06-21",
     "displayDate": "June 2023",
     "regulator": "SBP",
     "headline": "Revised EMI Regulations 2023 Issued",
-    "annotation": "The revised framework dramatically expanded what EMIs can do: payment aggregation, bill aggregation, escrow services for online commerce, API services to other fintechs, and inward cross border remittances. Wallet limits were increased, and minors and freelancers became eligible customers. If you are building a wallet or payment product, these regulations define your ceiling.",
+    "annotation": "SBP revised the regulations for Electronic Money Institutions. EMIs may offer payment and bill aggregation, escrow for domestic online commerce with SBP approval, secure APIs to other firms after notifying SBP, and inward remittances to wallets with SBP permission. The regulations also cover wallets for minors, including minors who work as freelancers. If you are building a wallet or payment product, these regulations define your ceiling.",
     "sourceUrl": "https://www.sbp.org.pk/psd/2023/C3-Enclosure-Regulations-EMIs.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "Regulations for Electronic Money Institutions 2023 (PSD 2023 Circular 3 enclosure)",
-    "sourceDate": "June 2023",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Primary, not re-checked"
+    "sourceTitle": "Regulations for Electronic Money Institutions (revised June 2023)",
+    "label": "Primary"
   },
   {
     "date": "2023-07-01",
     "displayDate": "July 2023",
     "regulator": "MoITT",
-    "headline": "Personal Data Protection Bill 2023 Approved by Cabinet",
-    "annotation": "Pakistan's first comprehensive data privacy legislation was approved by the Federal Cabinet and sent to Parliament. It establishes a National Commission for Personal Data Protection and requires explicit consent frameworks, breach notification, and cross border data transfer controls. Any fintech handling PII needs to architect consent management and data audit trails now, even before final enactment. Status update: the World Bank's 2026 regional assessment still lists Pakistan's data protection law as a draft, so the bill is not binding law.",
+    "headline": "Personal Data Protection Bill 2023: Final Draft",
+    "annotation": "MoITT published a final draft of the Personal Data Protection Bill in May 2023. The state news agency reported in July 2023 that the federal cabinet had approved it. The draft would set up a National Commission for Personal Data Protection and would require consent, breach notification and controls on cross border transfers. The World Bank's 2026 regional assessment lists Pakistan's data protection law as a draft. It is a bill, not law. Any fintech handling personal data can still design consent management and data audit trails now.",
     "sourceUrl": "https://moitt.gov.pk/SiteImage/Misc/files/Final%20Draft%20Personal%20Data%20Protection%20Bill%20May%202023.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "Ministry of IT and Telecommunication",
-    "sourceTitle": "Final draft Personal Data Protection Bill, May 2023",
-    "sourceDate": "May 2023",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Primary, not re-checked",
+    "sourceTitle": "Personal Data Protection Bill, final draft, May 2023",
+    "label": "Primary",
     "extraSources": [
       {
-        "url": "https://www.worldbank.org/",
+        "url": "https://documents1.worldbank.org/curated/en/099110926084536993/pdf/P507284-0c4a825c-0c5d-40d5-8e72-cc9a23fa2f46.pdf",
         "publisher": "World Bank",
-        "title": "Digital Public Infrastructure for Inclusive Growth: A Regional Assessment for the Middle East, North Africa, Afghanistan, and Pakistan, p. 46 (local copy of the PDF)",
-        "date": "2026",
-        "accessed": "17 November 2026",
+        "title": "Digital Public Infrastructure for Inclusive Growth: A Regional Assessment for the Middle East, North Africa, Afghanistan, and Pakistan",
         "label": "Primary"
+      },
+      {
+        "url": "https://www.app.com.pk/?p=661433",
+        "publisher": "Associated Press of Pakistan",
+        "title": "Cabinet approves E-Safety, Personal Data Protection Bills 2023",
+        "label": "Secondary"
       }
     ]
   },
   {
-    "date": "2023-09-01",
+    "date": "2023-09-14",
     "displayDate": "September 2023",
     "regulator": "SECP",
     "headline": "Regulatory Sandbox Opened to Applications All Year",
-    "annotation": "SECP moved from intake in cohorts to applications all year round, across three streams: Islamic finance, conventional finance, and initiatives focused on women. Startups can now apply whenever their product is ready rather than wait for the next cohort window.",
-    "sourceUrl": "https://www.secp.gov.pk/regulatory-sandbox/",
+    "annotation": "SECP moved its sandbox from intake in cohorts to applications all year round, across three streams: Islamic finance, conventional finance, and businesses run by women. Startups can now apply whenever their product is ready rather than wait for the next cohort window.",
+    "sourceUrl": "https://www.secp.gov.pk/wp-content/uploads/2023/09/Press-Release-Sep-14-SECP-Regulatory-Sandbox-shifts-to-Always-Open.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "Securities and Exchange Commission of Pakistan",
-    "sourceTitle": "Regulatory sandbox page",
-    "sourceDate": "Undated page",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Primary, not re-checked"
+    "sourceTitle": "SECP's Regulatory Sandbox shifts to 'Always Open' (press release)",
+    "label": "Primary"
   },
   {
-    "date": "2023-09-01",
+    "date": "2023-09-20",
     "displayDate": "September 2023",
     "regulator": "SBP",
     "headline": "Five Digital Bank In Principle Approvals Granted",
-    "annotation": "Easypaisa, Mashreq Bank, Raqami Islamic Digital Bank, HugoBank, and KT Bank received In Principle Approval to prepare for operational readiness. This validated that SBP's digital bank framework was moving from policy to execution. For the ecosystem, it signaled that branchless banking at scale was imminent and third party service providers should prepare integration capabilities.",
-    "sourceUrl": "https://www.sbp.org.pk/dfs/Digital-Bank-Regulatory.html",
+    "annotation": "SBP gave In Principle Approval to five proposed digital retail banks: HugoBank, KT Bank Pakistan, Mashreq Bank Pakistan, Raqami Islamic Digital Bank, and Telenor Microfinance Bank (later Easypaisa Bank). The digital bank framework was moving from policy to execution, and service providers could start preparing integrations.",
+    "sourceUrl": "https://www.sbp.org.pk/press/2023/Pr-20-Sep-2023.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "Digital bank regulatory page",
-    "sourceDate": "Undated page",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Primary, not re-checked"
+    "sourceTitle": "SBP awards In Principle Approval to five proposed digital retail banks (press release)",
+    "label": "Primary"
   },
   {
     "date": "2023-12-05",
     "displayDate": "December 2023",
     "regulator": "SBP",
     "headline": "Raast P2M Service Launched",
-    "annotation": "Merchant payments on Pakistan's instant payment rail became operational, with all regulated entities required to enable P2M capabilities by March 2024. The system uses SBP's indigenous QR code standard. For builders, this means any merchant facing product can now accept instant payments via a standardized QR flow rather than proprietary integrations.",
+    "annotation": "Merchant payments on Pakistan's instant payment rail became operational. All regulated entities had to let customers scan Raast P2M QR codes and handle merchant payment requests on their apps by 1 March 2024, free of charge to customers. For builders, any merchant facing product can now accept instant payments through a standard QR flow rather than proprietary integrations.",
     "sourceUrl": "https://www.sbp.org.pk/psd/2023/C4.htm",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "PSD 2023 Circular 4",
-    "sourceDate": "December 2023",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Primary, not re-checked"
+    "sourceTitle": "PSP&OD Circular No. 04 of 2023: Launch of Raast Person to Merchant (P2M) Service",
+    "label": "Primary"
   },
   {
     "date": "2025-01-28",
     "displayDate": "January 2025",
     "regulator": "SBP",
     "headline": "First Digital Retail Bank License Granted",
-    "annotation": "Easypaisa Bank Limited became Pakistan's first licensed digital retail bank, authorized for full commercial operations. This is the proof point that the 2022 framework actually delivers licenses. Competing fintechs now face a licensed digital first competitor with Telenor's distribution reach. Mashreq Bank received pilot approval shortly after in February.",
+    "annotation": "Easypaisa Bank Limited became Pakistan's first licensed digital retail bank, authorised for commercial operations. This is the proof point that the 2022 framework delivers licences. Competing fintechs now face a licensed digital first competitor with Telenor's distribution reach. Mashreq Bank Pakistan received a restricted licence for pilot operations on 21 February 2025.",
     "sourceUrl": "https://www.sbp.org.pk/press/2025/Pr-28-Jan-2025.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "Press release, 28 January 2025",
-    "sourceDate": "28 January 2025",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Primary, not re-checked"
+    "sourceTitle": "SBP awards first Digital Retail Bank licence to Easypaisa Bank Limited (press release)",
+    "label": "Primary",
+    "extraSources": [
+      {
+        "url": "https://www.sbp.org.pk/press/2025/Pr-20-Feb-2025.pdf",
+        "publisher": "State Bank of Pakistan",
+        "title": "SBP awards pilot licence to Mashreq Bank Pakistan Limited to operate as Digital Retail Bank (press release)",
+        "label": "Primary"
+      }
+    ]
   },
   {
     "date": "2025-02-21",
     "displayDate": "February 2025",
     "regulator": "SBP",
     "headline": "Raast Participation Criteria Published",
-    "annotation": "SBP opened Raast access beyond banks to fintechs, payment aggregators, and even educational institutions through four participant categories (in SBP's terms, direct settlement, direct non-settlement, payment initiation service providers and indirect participants). This enables open banking, because fintechs that are not banks can now initiate payments on Raast directly rather than routing through a banking partner.",
+    "annotation": "SBP opened Raast access beyond banks to fintechs, payment aggregators, and even educational institutions through four participant categories (in SBP's terms, direct settlement, direct non-settlement, payment initiation service providers and indirect participants). This supports open banking, because fintechs that are not banks can now initiate payments on Raast directly rather than routing through a banking partner.",
     "sourceUrl": "https://www.sbp.org.pk/psd/2025/C1.htm",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
     "sourceTitle": "PSP&OD Circular No. 01 of 2025: Raast Participation Criteria",
-    "sourceDate": "21 February 2025",
-    "accessed": "17 November 2026",
     "label": "Primary"
   },
   {
-    "date": "2025-05-21",
+    "date": "2025-05-20",
     "displayDate": "May 2025",
     "regulator": "SBP",
     "headline": "SBP Regulatory Sandbox Launched",
-    "annotation": "SBP launched its own sandbox under Vision 2028, separate from SECP's. The first cohort themes, open banking, inward remittances and remote merchant onboarding, show SBP's priorities. Participants get six months of supervised live testing. If you are building an open banking product, this is likely the lowest risk path to regulatory approval.",
-    "sourceUrl": "https://profit.pakistantoday.com.pk/2025/05/21/sbp-launches-regulatory-sandbox-to-foster-innovation-in-fintech-sector/",
+    "annotation": "SBP issued Guidelines for its own Regulatory Sandbox, separate from SECP's, in line with its Vision 2028. Testing runs in cohorts built around themes. The first cohort's themes, open banking, inward remittances and remote merchant onboarding, came with the shortlist in January 2026. If you are building an open banking product, this is likely the lowest risk path to regulatory approval.",
+    "sourceUrl": "https://www.sbp.org.pk/press/2025/Pr-20-May-2025-1.pdf",
     "sourceAvailable": true,
-    "sourcePublisher": "Profit by Pakistan Today",
-    "sourceTitle": "SBP launches regulatory sandbox to foster innovation in fintech sector",
-    "sourceDate": "21 May 2025",
-    "accessed": "Not re-checked in November 2026",
-    "label": "Secondary, not re-checked"
+    "sourcePublisher": "State Bank of Pakistan",
+    "sourceTitle": "SBP issues the Guidelines for the Regulatory Sandbox (press release)",
+    "label": "Primary"
   },
   {
     "date": "2025-07-25",
     "displayDate": "July 2025",
     "regulator": "SBP",
-    "headline": "Consolidated Customer Onboarding Framework (BPRD 01/2025)",
-    "annotation": "SBP brought customer onboarding rules into one framework in which biometric verification is the primary method, with NADRA Verisys as a fallback only where biometrics are not possible. For builders, account opening and wallet activation flows need NADRA biometric checks. Its circular number, date and compliance deadline were not visible in the document read.",
-    "sourceUrl": "https://www.sbp.org.pk/bprd/2025/C1-Consolidated-Customer-Onboarding-Framework.pdf",
+    "headline": "Consolidated Customer Onboarding Framework",
+    "annotation": "SBP issued the Consolidated Customer Onboarding Framework by circular on 25 July 2025, with compliance due within three months. It brings customer onboarding rules into one framework in which biometric verification through NADRA is the primary method, with NADRA Verisys as a fallback only where biometrics are not possible. For builders, account opening and wallet activation flows need NADRA biometric checks.",
+    "sourceUrl": "https://www.sbp.org.pk/bprd/2025/C1.htm",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "Consolidated Customer Onboarding Framework",
-    "sourceDate": "2025",
-    "accessed": "17 November 2026",
-    "label": "Primary (circular number, date and deadline not shown in the document)"
+    "sourceTitle": "Circular issuing the Consolidated Customer Onboarding Framework, 25 July 2025",
+    "label": "Primary",
+    "extraSources": [
+      {
+        "url": "https://www.sbp.org.pk/bprd/2025/C1-Consolidated-Customer-Onboarding-Framework.pdf",
+        "publisher": "State Bank of Pakistan",
+        "title": "Consolidated Customer Onboarding Framework",
+        "label": "Primary"
+      }
+    ]
   },
   {
     "date": "2025-08-13",
     "displayDate": "August 2025",
     "regulator": "SBP",
     "headline": "Digital Rupee CBDC Pilot Planned; Soramitsu Reported as Partner",
-    "annotation": "SBP's governor said the bank was preparing a CBDC pilot, and Dawn, citing Nikkei Asia, reported that Japan's Soramitsu would work with SBP on it. In January 2026 the pilot was still described as planned, and SBP's FY26 payment systems review does not mention it. Live status unconfirmed as of 17 November 2026. For builders, a CBDC would be a new rail alongside Raast if it goes ahead.",
+    "annotation": "SBP's governor said the bank was preparing a CBDC pilot, and Dawn, citing Nikkei Asia, reported that Japan's Soramitsu would work with SBP on it. In January 2026 the pilot was still described as planned, and SBP's FY26 payment systems review does not mention it. I found no official SBP notice that the pilot has started. For builders, a CBDC would be a new rail alongside Raast if it goes ahead.",
     "sourceUrl": "https://www.dawn.com/news/1930568",
     "sourceAvailable": true,
     "sourcePublisher": "Dawn (Shahid Iqbal)",
     "sourceTitle": "Pakistan picks Japanese company for digital currency rollout",
-    "sourceDate": "13 August 2025",
-    "accessed": "17 November 2026",
-    "label": "Secondary (reports a Nikkei Asia story)"
+    "label": "Secondary",
+    "extraSources": [
+      {
+        "url": "https://www.thenews.pk/tns/detail/1390389-a-year-for-digitalisation",
+        "publisher": "The News on Sunday",
+        "title": "A year for digitalisation",
+        "label": "Secondary"
+      }
+    ]
   },
   {
     "date": "2025-08-19",
@@ -225,12 +223,10 @@
     "regulator": "SBP",
     "headline": "PRISM+ Goes Live on ISO 20022",
     "annotation": "SBP launched PRISM+, the upgraded large value settlement system, moving the RTGS to the ISO 20022 messaging standard across retail and large value payments. For builders, ISO 20022 brings richer, structured payment data that reconciliation and compliance tools can use.",
-    "sourceUrl": "https://www.sbp.org.pk/PS/PDF/Annual-Payment-Systems-Review-FY26.pdf",
+    "sourceUrl": "https://www.sbp.org.pk/assets/document/publications/Annual-Payment-Systems-Review-FY26.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "Annual Payment Systems Review FY 2025-26, pp. 8 and 13",
-    "sourceDate": "October 2026",
-    "accessed": "17 November 2026",
+    "sourceTitle": "Annual Payment Systems Review FY 2025-26",
     "label": "Primary"
   },
   {
@@ -239,12 +235,10 @@
     "regulator": "SBP",
     "headline": "1LINK Designated as a Payment System",
     "annotation": "SBP notified 1LINK, which runs shared ATM switching, interbank transfers, bill payments and PayPak, as a Designated Payment System under the Payment Systems and Electronic Fund Transfers Act 2007. This brings closer oversight and alignment with international standards for infrastructure that many fintech flows depend on.",
-    "sourceUrl": "https://www.sbp.org.pk/PS/PDF/Annual-Payment-Systems-Review-FY26.pdf",
+    "sourceUrl": "https://www.sbp.org.pk/assets/document/publications/Annual-Payment-Systems-Review-FY26.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "Annual Payment Systems Review FY 2025-26, p. 22",
-    "sourceDate": "October 2026",
-    "accessed": "17 November 2026",
+    "sourceTitle": "Annual Payment Systems Review FY 2025-26",
     "label": "Primary"
   },
   {
@@ -256,38 +250,40 @@
     "sourceUrl": "https://www.sbp.org.pk/circulars/pspod-circular-no-04-of-2025",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "PSP&OD Circular No. 04 of 2025 (described in the Annual Payment Systems Review FY 2025-26, pp. 22 to 23)",
-    "sourceDate": "3 October 2025",
-    "accessed": "17 November 2026 (via the FY26 review; circular page not opened)",
+    "sourceTitle": "PSP&OD Circular No. 04 of 2025: Technology Risk Management Framework for Payment Institutions",
     "label": "Primary"
   },
   {
     "date": "2025-10-17",
     "displayDate": "October 2025",
     "regulator": "NADRA",
-    "headline": "Digital Identity & NDEL Regulations 2025 Issued",
-    "annotation": "NADRA issued the Digital Identity Regulations 2025, which let citizens verify identity online without physical documents, and the National Data Exchange Layer (NDEL) Regulations 2025, a standard framework for data sharing between government agencies and authorised private organisations. For fintechs, this points toward digital ID checks and structured data exchange in onboarding.",
+    "headline": "NADRA Digital Identity and NDEL Regulations Announced",
+    "annotation": "NADRA announced the Digital Identity Regulations 2025, which let citizens verify identity online without physical documents, and the National Data Exchange Layer (NDEL) Regulations 2025, a framework for data sharing between government agencies and authorised private organisations. The press reported that the Ministry of Law and Justice had approved them. I could not find the official text or a date of effect. For fintechs, this points toward digital ID checks and structured data exchange in onboarding.",
     "sourceUrl": "https://propakistani.pk/2025/10/17/nadra-issues-landmark-digital-id-and-data-exchange-regulations/",
     "sourceAvailable": true,
     "sourcePublisher": "ProPakistani",
     "sourceTitle": "NADRA issues landmark digital ID and data exchange regulations",
-    "sourceDate": "17 October 2025",
-    "accessed": "17 November 2026",
     "label": "Secondary"
   },
   {
     "date": "2025-10-29",
     "displayDate": "October 2025",
     "regulator": "PTA",
-    "headline": "Critical Telecom Infrastructure Security Regulations 2025",
-    "annotation": "PTA mandated data localization for all telecom operators, required CISO appointments, annual cyber audits, and 24-hour incident reporting under a Zero Trust security model aligned with ISO 27001 and NIST CSF. Fintechs dependent on telecom infrastructure for mobile money or USSD channels need to understand that their underlying carriers now face strict compliance obligations that could affect uptime SLAs and data handling agreements.",
+    "headline": "PTA Critical Telecom Data and Infrastructure Security Regulations 2025",
+    "annotation": "PTA published Critical Telecom Data and Infrastructure Security Regulations 2025 for telecom operators. As reported, they cover data localisation, a Chief Information Security Officer, yearly risk assessments and third party audits, and reporting of serious incidents within 24 hours, on a Zero Trust model. The press described the text as a draft open for comment until 7 November 2025, and I could not confirm whether a final version is in force. Fintechs that rely on telecom channels for mobile money or USSD should watch how these rules affect their carriers.",
     "sourceUrl": "https://www.pta.gov.pk/assets/media/2025-10-29-Critical-Telecom-Data-and-Infrastructure-Security-Regulations-2025.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "Pakistan Telecommunication Authority",
     "sourceTitle": "Critical Telecom Data and Infrastructure Security Regulations 2025",
-    "sourceDate": "29 October 2025 (from file name)",
-    "accessed": "Tried 17 November 2026; site blocks automated readers",
-    "label": "Primary, not re-checked"
+    "label": "Primary",
+    "extraSources": [
+      {
+        "url": "https://propakistani.pk/2025/11/04/pta-to-enforce-data-localization-and-stricter-cybersecurity-for-telcos/",
+        "publisher": "ProPakistani",
+        "title": "PTA to enforce data localization and stricter cybersecurity for telcos",
+        "label": "Secondary"
+      }
+    ]
   },
   {
     "date": "2026-01-06",
@@ -298,9 +294,7 @@
     "sourceUrl": "https://www.sbp.org.pk/press/2026/Pr-06-Jan-2026.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "SBP announces the shortlisted applicants for the first cohort of its Regulatory Sandbox",
-    "sourceDate": "6 January 2026",
-    "accessed": "17 November 2026",
+    "sourceTitle": "SBP announces the shortlisted applicants for the first cohort of its Regulatory Sandbox (press release)",
     "label": "Primary"
   },
   {
@@ -309,12 +303,10 @@
     "regulator": "SBP",
     "headline": "Raqami Islamic Digital Bank Becomes a Scheduled Bank",
     "annotation": "Raqami Islamic Digital Bank obtained scheduled bank status, after Mashreq Bank Pakistan in September 2025. Two more digital banks are now operating, which raises competition for digital first retail products.",
-    "sourceUrl": "https://www.sbp.org.pk/PS/PDF/Annual-Payment-Systems-Review-FY26.pdf",
+    "sourceUrl": "https://www.sbp.org.pk/assets/document/publications/Annual-Payment-Systems-Review-FY26.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan",
-    "sourceTitle": "Annual Payment Systems Review FY 2025-26, p. 21",
-    "sourceDate": "October 2026",
-    "accessed": "17 November 2026",
+    "sourceTitle": "Annual Payment Systems Review FY 2025-26",
     "label": "Primary"
   },
   {
@@ -323,62 +315,60 @@
     "regulator": "SBP",
     "headline": "Cyber Shield Cyber Resilience Strategy (2025 to 2030)",
     "annotation": "CRMD Circular Letter No. 01 of 2026 launched a phased cyber resilience roadmap for SBP regulated entities, covering governance, detection and response, recovery, skills and third party risk. Regulated entities must align their own cybersecurity programmes with it.",
-    "sourceUrl": "https://regalert.today/document/90706ec4-fc64-4ac2-b634-53ffb45f21b4/text",
+    "sourceUrl": "https://www.sbp.org.pk/CRMD/2026/CL01.htm",
     "sourceAvailable": true,
-    "sourcePublisher": "State Bank of Pakistan (text read via a RegAlert copy)",
-    "sourceTitle": "CRMD Circular Letter No. 01 of 2026",
-    "sourceDate": "16 February 2026",
-    "accessed": "17 November 2026",
-    "label": "Primary text via a third party copy"
+    "sourcePublisher": "State Bank of Pakistan",
+    "sourceTitle": "CRMD Circular Letter No. 01 of 2026: Launch of Cyber Shield Cyber Resilience Strategy for SBP Regulated Entities (2025 to 2030)",
+    "label": "Primary"
   },
   {
-    "date": "2026-03-06",
+    "date": "2026-03-05",
     "displayDate": "March 2026",
     "regulator": "PVARA",
-    "headline": "Virtual Assets Act 2026 Passed",
-    "annotation": "Parliament passed the Virtual Assets Act 2026, putting the Pakistan Virtual Assets Regulatory Authority (PVARA), first set up by a 2025 ordinance, on a statutory footing. It provides for licensing of virtual asset service providers, market surveillance and AML compliance, with coordination with SBP and SECP. Reports I read do not describe a stablecoin framework.",
-    "sourceUrl": "https://www.arabnews.pk/pakistan/pakistan-passes-virtual-assets-act-2026-empowers-regulator-to-combat-money-laundering-2635493",
+    "headline": "Virtual Assets Act 2026 Enacted",
+    "annotation": "The Virtual Assets Act 2026 received presidential assent on 4 March 2026 and came into force when it was published in the Gazette on 5 March 2026. It puts the Pakistan Virtual Assets Regulatory Authority (PVARA), first set up under a 2025 ordinance, on a statutory footing, with powers to license and supervise virtual asset service providers. The press reported a focus on market surveillance and anti money laundering, with coordination with SBP and SECP.",
+    "sourceUrl": "https://senate.gov.pk/uploads/documents/1773047180_950.pdf",
     "sourceAvailable": true,
-    "sourcePublisher": "Arab News Pakistan",
-    "sourceTitle": "Pakistan passes Virtual Assets Act 2026, empowers regulator to combat money laundering",
-    "sourceDate": "6 March 2026",
-    "accessed": "17 November 2026",
-    "label": "Secondary (Act text not read)"
+    "sourcePublisher": "Gazette of Pakistan",
+    "sourceTitle": "Virtual Assets Act, 2026 (Act No. XIII of 2026)",
+    "label": "Primary",
+    "extraSources": [
+      {
+        "url": "https://www.arabnews.pk/pakistan/pakistan-passes-virtual-assets-act-2026-empowers-regulator-to-combat-money-laundering-2635493",
+        "publisher": "Arab News Pakistan",
+        "title": "Pakistan passes Virtual Assets Act 2026, empowers regulator to combat money laundering",
+        "label": "Secondary"
+      }
+    ]
   },
   {
-    "date": "2026-04-15",
+    "date": "2026-04-14",
     "displayDate": "April 2026",
     "regulator": "SBP",
     "headline": "Banks Allowed to Serve Licensed Virtual Asset Service Providers",
-    "annotation": "An SBP circular replaced the 2018 ban on dealing in virtual currencies. Banks may open accounts for PVARA licensed providers and their customers, with client money kept in segregated, rupee denominated, non remunerative accounts and no cash in or out. This opens banking rails for licensed crypto businesses under tight controls.",
-    "sourceUrl": "https://tribune.com.pk/story/2603003/sbp-replaces-2018-crypto-ban-with-new-vasp-rules",
+    "annotation": "BPRD Circular Letter No. 10 of 2026 replaced SBP's 2018 circular on virtual currencies. Banks may open accounts for PVARA licensed providers, with client money kept in segregated, rupee denominated, non remunerative accounts and no cash deposits or withdrawals. This opens banking rails for licensed crypto businesses under tight controls.",
+    "sourceUrl": "https://www.sbp.org.pk/bprd/2026/CL10.htm",
     "sourceAvailable": true,
-    "sourcePublisher": "The Express Tribune",
-    "sourceTitle": "SBP replaces 2018 crypto ban with new VASP rules",
-    "sourceDate": "16 April 2026",
-    "accessed": "17 November 2026",
-    "label": "Secondary (circular number and exact date not confirmed)"
+    "sourcePublisher": "State Bank of Pakistan",
+    "sourceTitle": "BPRD Circular Letter No. 10 of 2026: Authorizing Opening of Bank Accounts to PVARA's NOC/Licensed VASPs and their Customers",
+    "label": "Primary"
   },
   {
     "date": "2026-10-30",
     "displayDate": "October 2026",
     "regulator": "SBP",
     "headline": "Draft Open Banking Regulations 2026 Released for Consultation",
-    "annotation": "SBP published draft Open Banking Regulations for public consultation. The draft would require banks, microfinance banks and EMIs to open APIs to licensed third party providers, with Raast as a central API hub and explicit, time bound, revocable customer consent. It builds on the open banking sandbox cohort. For builders, this is the clearest signal yet of how account information and payment initiation services will work.",
+    "annotation": "SBP published draft Open Banking Regulations for public consultation. The draft would require banks, microfinance banks and EMIs to open APIs to licensed third party providers, with Raast as a central API hub and explicit, time bound, revocable customer consent. It is a draft, not yet in force. It follows the open banking sandbox cohort. For builders, this is the clearest signal yet of how account information and payment initiation services may work.",
     "sourceUrl": "https://www.sbp.org.pk/assets/document/Open_Banking_Regulations_for_Public_Consulatation_Draft.pdf",
     "sourceAvailable": true,
     "sourcePublisher": "State Bank of Pakistan, Payment Systems Policy and Oversight Department",
-    "sourceTitle": "Open Banking Regulations 2026, draft for public consultation (pp. 5 to 8; date from PDF metadata and press coverage)",
-    "sourceDate": "30 October 2026",
-    "accessed": "17 November 2026 (local copy of the PDF)",
+    "sourceTitle": "Open Banking Regulations (Draft), for public consultation",
     "label": "Primary",
     "extraSources": [
       {
         "url": "https://mettisglobal.news/SBP-releases-draft-Open-Banking-Regulations-for-public-consultation-64702",
         "publisher": "Mettis Global",
         "title": "SBP releases draft Open Banking Regulations for public consultation",
-        "date": "31 October 2026",
-        "accessed": "17 November 2026",
         "label": "Secondary"
       }
     ]
